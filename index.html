@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-  body {
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>  body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
@@ -22,6 +27,7 @@
 
 /* style the container */
 .container {
+  justify-content: space-between;
   margin: auto;
   width: 100%;
   height: 100%/*auto*/;
@@ -116,6 +122,10 @@ div img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
 }
+
+div img2{
+  height: 100px;
+}
 div img:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -141,6 +151,31 @@ s img {
         .container-add{
             padding-left: 20px;
         }
+        ul {
+            text-align: left; /* Align text to the left */
+            margin-left: 20px; /* Optional: add some left margin */
+        }
+        hr{
+          color: black;
+        }
+        .separator {
+            width: 100%;
+            height: 2px;
+            background-color: #ccc;
+            margin: 15px 0;
+        }
+
+            
+
+        .left {
+            flex: 1; /* Allow this side to take available space */
+            text-align: left;
+            padding-right: 20px; /* Space between left and right */
+        }
+        .right {
+            flex: 1; /* Allow this side to take available space */
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -151,51 +186,74 @@ s img {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Complete</title>
-    <script>
+    <!--<script> 
         // Redirect after 5 seconds (5000 milliseconds)
         setTimeout(function() {
             window.location.href = '/login'; // Change '/login' to your login route
         }, 5000);
-    </script>
+    </script>-->
 </head>
 
 <body><div class="container">
     <div class="left">
     <div style="text-align: left; justify-content: right;">
-    <h1>404 - Page Not Found 🤖</h1>
-    <hr style="  justify-content:left;" width="20px">
+    <p><h1><!-- 404 - Page Not Found -->Antoine Valadon  🤖 </h1><button><a style="color: black;" href="/Resume"> Resume </a></button>
+      <div class="separator"></div> <!-- Horizontal line -->
+      <p>Links:<a href="https://www.linkedin.com/in/antoine-valadon-826388241/"><img style="width: 50px;filter: grayscale(0%); margin-right: 1px ; " draggable="false" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/linkedin/linkedin-original.svg"/></a>
+      <a href="https://github.com/BigLittle9"><img style="width: 50px;filter: grayscale(0%); " draggable="false" resizable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="The logo icon for GitHub" title="GitHub"/></a>
+      <a href="https://www.codewars.com/users/Antoine1339"><img style="width: 50px;filter: grayscale(0%); margin-right: 700px;" draggable="false" src="https://www.codewars.com/packs/assets/logo.f607a0fb.svg"/></a>
+      <div class="right">
+        
+    <!-- <img style="width: 300px; height: auto; filter: grayscale(0%);  transform: scale(1); justify-content: right; padding-left: 50px; " src="2/indownloader.app_picture_0162091001729382287.jpg"/> --></div>
+</p>
+    <hr style="  justify-content:left; background-color:black;" width="200px">
+    <div class="left">
+    <!-- <div class="img2" style="transform: scale(1); justify-content: left;"><p>Links:Links:Links:Links:
 
-    <div><p>Links:</p><a href="https://www.linkedin.com/in/antoine-valadon-826388241/"><img style="width: 50px;filter: grayscale(0%); margin-right: 1px ; " draggable="false" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/linkedin/linkedin-original.svg"/></a>
-    <a href="https://github.com/BigLittle9"><img style="width: 50px;filter: grayscale(0%); " draggable="false" resizable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="The logo icon for GitHub" title="GitHub"/></a>
-    <a href="https://www.codewars.com/users/Antoine1339"><img style="width: 50px;filter: grayscale(0%); margin-right: 700px;" draggable="false" src="https://www.codewars.com/packs/assets/logo.f607a0fb.svg"/></a>
-    <img style="width: 50px;filter: grayscale(0%); " src="2/indownloader.app_picture_0162091001729382287.jpg"/></div>
-    </div></p><p> a</div>
+      /
+      /
+      /
+      /
+      /
+      \n 
+      \
+    </p>
+      <p>a</p>   
+</div> -->
+<img style="width: 100%; height: 300px; filter: grayscale(0%);  transform: scale(1); padding: 0px;" src="2/Screenshot 2024-11-13 at 02.13.31.png">
+    </div></p><p> <!-- a --> </div></div> 
     <h2 style="padding: 0;"> &#x1F916Skills </h2>
+    <div class="separator"></div> <!-- Horizontal line -->
     <hr width="500px">
-    <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="The logo icon for react" title="React"/>
-                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="The logo icon for HTML 5" title="HTML 5"/>
+    <!-- <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="The logo icon for react" title="React"/> -->
+                <img draggable="false" title="Smiley face" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="The logo icon for HTML 5" title="HTML 5"/>
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="The logo icon for CSS3" title="CSS 3"/>
                <!--<img Sk🤖🐍 🐘🔥☕️ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="The logo icon for TailwindCSS" title="Twilwind CSS"/>--> 
-                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="The logo icon for GitHub" title="GitHub"/>
-                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="The logo icon for NPM" title="NPM"/>
-                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="The logo icon for NodeJS" title="Node JS"/>
+                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="The logo icon for GitHub" title="GitHub"/>
+                <!--<img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="The logo icon for NPM" title="NPM"/> 
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="The logo icon for NodeJS" title="Node JS"/>-->
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/python/python-original.svg"/>
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg"/>
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/matplotlib/matplotlib-original.svg"/>
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/flask/flask-original.svg"/>
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/javascript/javascript-original.svg"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/r/r-original.svg"/>
+                <!-- <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/> 
+                <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/bash/bash-original.svg"/>-->
+                <!-- <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/r/r-original.svg"/>-->
                 <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/jupyter/jupyter-original-wordmark.svg"/>
-    <p>Sorry, the page you are looking for does not exist.</p>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/azuredevops/azuredevops-original.svg"/>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/sqlite/sqlite-original.svg"/>
+                
+    <p><!-- Sorry, the page you are looking for does not exist. --></p>
     <br>
     <h2>&#x1F527Projects</h2> 
+    <div class="separator"></div> <!-- Horizontal line -->
     <hr width="500px">
     <button class="button" id="add-element-1" style="font-size: 20px;">&#x1F40D &#x1F418 Flask application </button>
     <button class="button" id="add-element-2" style="font-size: 20px;">&#x1F4CA &#x1F4BB;Jupyter notebook</button>
-    <button  class="button" style=" font-size: 20px;">&#x1F916 A pydog.io</button>
-    <button  class="button" style=" font-size: 20px;">&#x1F916 A pydog.io</button>
-    <a href=""><button class="button" style="font-size: 20px; background-color: rgb(230, 230, 43);"> A More &#x27A1</button></a>
+    <button  class="button" id="add-element-3" style=" font-size: 20px;">&#x1F916 Ai</button>
+    <button  class="button" id="add-element-4" style=" font-size: 20px;">&#x1F916 Data</button>
+    <a href=""><button class="button" id="add-element-5" style="font-size: 20px; background-color: rgb(230, 230, 43);"> More &#x27A1</button></a>
     </p><div id="myDiv">    <div id="container-add">
         <!-- Dynamic element will be added here -->
     </div>
@@ -215,11 +273,95 @@ s img {
     // Get the button elements
     const addElementButton1 = document.getElementById('add-element-1');
     const addElementButton2 = document.getElementById('add-element-2');
-    
+    const addElementButton3 = document.getElementById('add-element-3');
+    const addElementButton4 = document.getElementById('add-element-4');
+    const addElementButton5 = document.getElementById('add-element-5');
+
     // Add event listeners to the buttons
-    addElementButton1.addEventListener('click', () => addElement('This is a new element with text and an image!', 'https://picsum.photos/200/300'));
+    addElementButton1.addEventListener('click', () => addElement(`
+
+<h1>Flask Web Application for Interactive Learning and User Management</h1>
+Website:<a href="https://www.pydog.io/" target="popup" onclick="window.open('/https://www.pydog.io/','name','width=600,height=400')" style="text-decoration: none; color: blue; font-family: 'Open Sans', monospace;"> 🚀https://www.pydog.io/  <span class="glyphicon glyphicon-new-window"></span></a> 
+ | Repository:<a href="https://github.com/BigLittle9/-Creating-a-coding-practice-website-" target="popup" onclick="window.open('/https://github.com/BigLittle9/-Creating-a-coding-practice-website-','name','width=600,height=400')" style="text-decoration: none; color: blue; font-family: 'Open Sans', monospace;"> https://github.com/BigLittle9/-Creating-a-coding-practice-website-  <span class="glyphicon glyphicon-new-window"></span></a> 
+
+<h2>Overview</h2>
+<p>This Flask application serves as an interactive platform for users to learn and test their programming skills. 
+Users can register, log in, view questions, submit answers, and receive feedback on their submissions. 
+The application also features a leaderboard to motivate users to improve their scores and compare their performance with others.</p>
+
+<h2>Key Features</h2>
+
+<h3>User Registration and Authentication:</h3>
+<ul>
+    <li>Users can create accounts by providing a username, email, and password.</li>
+    <li>The application verifies the uniqueness of usernames and emails to prevent duplicates.</li>
+    <li>Email verification is implemented to confirm user registrations, enhancing security and data integrity.</li>
+</ul>
+
+<h3>Question Management:</h3>
+<ul>
+    <li>The application fetches a list of programming questions from a PostgreSQL database.</li>
+    <li>Questions are evaluated based on user submissions, allowing users to write and submit Python functions to solve the problems.</li>
+</ul>
+
+<h3>Real-Time Code Evaluation:</h3>
+<ul>
+    <li>Users can submit their code to be executed in a controlled environment.</li>
+    <li>The application employs a SafeEvaluator class that securely evaluates user-defined functions, ensuring that only safe operations are allowed.</li>
+    <li>Feedback is provided on whether the submitted solution is correct or incorrect.</li>
+</ul>
+
+<h3>Leaderboards:</h3>
+<ul>
+    <li>A leaderboard feature allows users to view their scores in comparison to others.</li>
+    <li>Users are ranked based on their scores, fostering a competitive environment.</li>
+</ul>
+
+<h3>User Profiles:</h3>
+<ul>
+    <li>Each user has a profile page displaying their score, rank, and other relevant information.</li>
+    <li>Gravatar integration is implemented to display user avatars based on their email addresses.</li>
+</ul>
+
+<h3>Secure Environment:</h3>
+<ul>
+    <li>The application uses HTTPS to ensure secure communication.</li>
+    <li>Passwords are stored securely in the database, and user input is validated to prevent common security vulnerabilities.</li>
+</ul>
+
+<h3>Maintenance Mode:</h3>
+<ul>
+    <li>An optional maintenance mode can be activated to restrict access to the application during updates or maintenance periods.</li>
+</ul>
+
+<h3>Responsive Design:</h3>
+<ul>
+    <li>The application is designed to be user-friendly, with a clean and responsive layout for various devices.</li>
+</ul>
+
+<h2>Technologies Used</h2>
+<ul>
+    <li><strong>Flask:</strong> A lightweight WSGI web application framework in Python.</li>
+    <li><strong>PostgreSQL:</strong> A powerful, open-source object-relational database system for storing user data and questions.</li>
+    <li><strong>HTML/CSS/JavaScript:</strong> For front-end design and user interaction.</li>
+    <li><strong>Python:</strong> The primary language for server-side logic, including user authentication and question evaluation.</li>
+    <li><strong>Email Services:</strong> SMTP configuration for sending verification emails to users.</li>
+    <li><strong>Environment Variables:</strong> Utilized for sensitive information like database credentials and API keys, enhancing security through the use of the dotenv package.</li>
+</ul>
+
+<h2>Future Enhancements</h2>
+<ul>
+    <li>Implementing additional question types and difficulty levels to diversify the learning experience.</li>
+    <li>Adding user progress tracking to allow users to pick up where they left off.</li>
+    <li>Integrating additional third-party authentication methods, such as Google OAuth, for a seamless login experience.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>This Flask application provides a robust foundation for an interactive learning platform that encourages users to enhance their programming skills while enjoying a gamified experience. The focus on security, user experience, and functionality makes it a valuable project for anyone interested in web development and educational technologies.</p>`, "https://i.ibb.co/WxC3PDQ/Untitled-design-2.png"));
     addElementButton2.addEventListener('click', () => addElement('This is another new element with text and an image!', 'https://picsum.photos/200/301'));
-    
+    addElementButton3.addEventListener('click', () => addElement('This is another new element with text and an image!', 'https://picsum.photos/200/301'));
+    addElementButton4.addEventListener('click', () => addElement('This is another new element with text and an image!', 'https://picsum.photos/200/301'));
+    addElementButton5.addEventListener('click', () => addElement('This is another new element with text and an image!', 'https://picsum.photos/200/301'));
     // Function to add a new element
     function addElement(text, imageUrl) {
         // Remove the existing element
@@ -232,10 +374,11 @@ s img {
         const newElement = document.createElement('div');
         newElement.classList.add('new-element');
     
-        const textElement = document.createElement('p');
-        textElement.textContent = text;
+        const textElement = document.createElement('div');
+        textElement.innerHTML = text; // Use innerHTML to allow HTML formatting
     
         const image = document.createElement('img');
+        image.style = "filter: grayscale(0%); transform: scale(1);"
         image.src = imageUrl;
         image.alt = 'Random Image';
     
